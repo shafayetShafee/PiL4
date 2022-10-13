@@ -72,6 +72,8 @@ io.write(page)
 </html>
 ```
 
+Note that, There are one newline `\n`  each just after initial square bracket pair `[[` and just before the ending square bracket pair `]]`.
+
 But if the literal strings itself contains `]]`, we need to use `=` signs in between brackets like `[==[` and `]==]`
 
 ```
