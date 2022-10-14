@@ -1,6 +1,8 @@
 -- PROBLEM DESCRIPTION
 --[[
   Exercise 4.4: Redo the previous exercise for UTF-8 strings:
+  ( Write a function to insert a string into a given position
+  of another one)
 
   > insert("ação", 5, "!") --> ação!
   

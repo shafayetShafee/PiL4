@@ -311,6 +311,32 @@ for i, c in utf8.codes("résumé") do print(i, c) end
 ```
 
 
+## Regex
 
+Unlike other languages the lua RegEx is different, it is more limited and has different syntax.
 
+The Lua programming offers a set of functions that allows us to search a string for a match as listed below:
 
+- `find(string, pattern [, init [, plain]])`: This function returns to start and end index of a match pattern in a string.
+- `match(string, pattern [, index])`: This function matches a pattern once the matching starts at the given index.
+- `gmatch(string, pattern)`: This function returns a function which iterates through all matches pattern in string.
+- `gsub(string, pattern, repl [ , n])`: This function used to replace the matched string by substrings and n specify the n number of replacement.
+
+The Lua programming offers a set of metacharacters, special sequence and sets which have a special meaning as listed below
+
+- . – : This is a metacharacter which matches all characters.
+- %a: This is a special sequence which matches all letters.
+- %l: This is a special sequence which matches all lowercase letters.
+- %u: This is a special sequence which matches all uppercase letters.
+- %d: This is a special sequence which matches all digits.
+- %s: This is a special sequence which matches all whitespace characters.
+- %x: This is a special sequence which matches all hexadecimal digits.
+- %p: This is a special sequence which matches all punctuation characters.
+- %g: This is a special sequence which matches all printable characters except space.
+- %c: This is a special sequence which matches all control characters.
+- [set]: This is a set which matches the class which is the union of all characters in set.
+- [^set]: This is a special sequence which matches the complement of set.
+- +: This is a greedy match which matches 1 or more occurrences of previous character class.
+- *: This is a greedy match which matches 0 or more occurrences of previous character class.
+- ?: This is a match exactly which matches 0 or 1 occurrence of previous character class.
+- – -: This is a lazy match which matched 0 or more occurrences of previous character class.
